@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListarActivity"
+    android:padding="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/CREAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_estilos_reset"
+            android:onClick="CREAR"
+            android:text="CREAR"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncalcular"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_estilos_reset"
+            android:onClick="php"
+            android:text="PHP"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btnpython"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:background="@drawable/boton_estilos_reset"
+            android:onClick="python"
+            android:text="PYTHON"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btnjava"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_estilos_reset"
+            android:onClick="java"
+            android:text="JAVA"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btnnode"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_estilos_reset"
+            android:onClick="node"
+            android:text="NODE"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncalcular2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/boton_estilos_reset"
+            android:onClick="phpA"
+            android:text="ALL"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btnpython2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/boton_estilos_reset"
+            android:onClick="pythonA"
+            android:text="ALL"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btnjava2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/boton_estilos_reset"
+            android:onClick="javaA"
+            android:text="ALL"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:id="@+id/btnnode2"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_estilos_reset"
+            android:onClick="nodeA"
+            android:text="ALL"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USUARIOS"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="24dp">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="377dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>
